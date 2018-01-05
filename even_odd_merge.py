@@ -50,6 +50,7 @@ def even_odd_merge_textbook(L):
 
     while L:
         tails[turn].next = L
+        
         L = L.next
         tails[turn] = tails[turn].next
         turn ^= 1
